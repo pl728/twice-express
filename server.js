@@ -7,10 +7,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/tzuyu', function (req, res) {
-  res.sendFile(__dirname + '\\tzuyu.html');
+  res.sendFile(__dirname + '/tzuyu.html');
 });
 app.get('/jihyo', function (req, res) {
-  res.sendFile(__dirname + '\\jihyo.html');
+  res.sendFile(__dirname + '/jihyo.html');
 });
 
 app.listen(port, () => {
