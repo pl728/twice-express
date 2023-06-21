@@ -6,8 +6,11 @@ app.get('/', (req, res) => {
   res.send('Hello Twice');
 });
 
-app.get('/tzuyu', (req, res) => {
-  res.send('<h1>I love Tzuyu</h1>');
+app.get('/tzuyu', function (req, res) {
+  res.sendFile('E:\\Patrick\\c1\\projects\\aws-week2\\tzuyu.html');
+});
+app.get('/jihyo', function (req, res) {
+  res.sendFile('E:\\Patrick\\c1\\projects\\aws-week2\\jihyo.html');
 });
 
 app.listen(port, () => {
