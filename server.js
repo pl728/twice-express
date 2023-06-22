@@ -23,7 +23,7 @@ app.get('/choose', (req, res) => {
   res.send(members[Math.floor(Math.random() * members.length)]);
 });
 
-app.get('/twice-members', function (req, res) {
+app.get('/data', function (req, res) {
   res.json({
     members: [
       {
